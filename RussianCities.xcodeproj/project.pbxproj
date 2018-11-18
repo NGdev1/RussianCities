@@ -7,23 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A5C8DAECD7AC3D0A9A45C0 /* Pods_RussianCities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F43BC268257AFE8DDF772B /* Pods_RussianCities.framework */; };
 		6B5D2014219F587A00A7E3E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D2013219F587A00A7E3E5 /* AppDelegate.swift */; };
-		6B5D2016219F587A00A7E3E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D2015219F587A00A7E3E5 /* ViewController.swift */; };
-		6B5D2019219F587A00A7E3E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5D2017219F587A00A7E3E5 /* Main.storyboard */; };
 		6B5D201C219F587A00A7E3E5 /* RussianCities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D201A219F587A00A7E3E5 /* RussianCities.xcdatamodeld */; };
 		6B5D201E219F587B00A7E3E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5D201D219F587B00A7E3E5 /* Assets.xcassets */; };
 		6B5D2021219F587B00A7E3E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5D201F219F587B00A7E3E5 /* LaunchScreen.storyboard */; };
+		6B5D203A21A015B700A7E3E5 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D202F21A015B700A7E3E5 /* ColorHelper.swift */; };
+		6B5D203B21A015B700A7E3E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203121A015B700A7E3E5 /* UIView.swift */; };
+		6B5D203C21A015B700A7E3E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203221A015B700A7E3E5 /* ViewController.swift */; };
+		6B5D203D21A015B700A7E3E5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203321A015B700A7E3E5 /* String.swift */; };
+		6B5D203E21A015B700A7E3E5 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203421A015B700A7E3E5 /* UIImage.swift */; };
+		6B5D203F21A015B700A7E3E5 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203521A015B700A7E3E5 /* TimeInterval.swift */; };
+		6B5D204021A015B700A7E3E5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203821A015B700A7E3E5 /* LoadingView.swift */; };
+		6B5D204121A015B700A7E3E5 /* UIView+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D203921A015B700A7E3E5 /* UIView+LoadingView.swift */; };
+		6B5D206321A015D800A7E3E5 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204321A015D800A7E3E5 /* PersistenceService.swift */; };
+		6B5D206521A015D800A7E3E5 /* NetworkingEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204821A015D800A7E3E5 /* NetworkingEnvironment.swift */; };
+		6B5D206621A015D800A7E3E5 /* ProgressHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204921A015D800A7E3E5 /* ProgressHandler.swift */; };
+		6B5D206721A015D800A7E3E5 /* ProgressDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204A21A015D800A7E3E5 /* ProgressDelegate.swift */; };
+		6B5D206821A015D800A7E3E5 /* NetworkingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204B21A015D800A7E3E5 /* NetworkingOperation.swift */; };
+		6B5D206921A015D800A7E3E5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204C21A015D800A7E3E5 /* Request.swift */; };
+		6B5D206A21A015D800A7E3E5 /* NetworkingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204D21A015D800A7E3E5 /* NetworkingDispatcher.swift */; };
+		6B5D206B21A015D800A7E3E5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204E21A015D800A7E3E5 /* APIService.swift */; };
+		6B5D206C21A015D800A7E3E5 /* ConcreateNetworkingDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D204F21A015D800A7E3E5 /* ConcreateNetworkingDispatcher.swift */; };
+		6B5D206E21A015D800A7E3E5 /* GetCitiesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D205221A015D800A7E3E5 /* GetCitiesOperation.swift */; };
+		6B5D207121A015D800A7E3E5 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D205621A015D800A7E3E5 /* Requests.swift */; };
+		6B5D207221A015D800A7E3E5 /* DataCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D205821A015D800A7E3E5 /* DataCheck.swift */; };
+		6B5D207321A015D800A7E3E5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D205A21A015D800A7E3E5 /* City.swift */; };
+		6B5D207721A015D800A7E3E5 /* CityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D206021A015D800A7E3E5 /* CityService.swift */; };
+		6B5D207921A015D800A7E3E5 /* NotificationCenterNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D206221A015D800A7E3E5 /* NotificationCenterNames.swift */; };
+		6B5D208821A0170700A7E3E5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D207B21A0170700A7E3E5 /* DataManager.swift */; };
+		6B5D208921A0170700A7E3E5 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D207C21A0170700A7E3E5 /* MulticastDelegate.swift */; };
+		6B5D208A21A0170700A7E3E5 /* SecondVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D207D21A0170700A7E3E5 /* SecondVCDelegate.swift */; };
+		6B5D208B21A0170700A7E3E5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D207E21A0170700A7E3E5 /* Device.swift */; };
+		6B5D208C21A0170700A7E3E5 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D208121A0170700A7E3E5 /* BEMAnimationManager.m */; };
+		6B5D208D21A0170700A7E3E5 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D208221A0170700A7E3E5 /* BEMPathManager.m */; };
+		6B5D208E21A0170700A7E3E5 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D208321A0170700A7E3E5 /* BEMCheckBoxGroup.m */; };
+		6B5D208F21A0170700A7E3E5 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D208521A0170700A7E3E5 /* BEMCheckBox.m */; };
+		6B5D209221A02E0300A7E3E5 /* Cities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5D209121A02E0300A7E3E5 /* Cities.storyboard */; };
+		6B5D209421A02E5400A7E3E5 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D209321A02E5400A7E3E5 /* CitiesViewController.swift */; };
+		6B5D209821A03C9B00A7E3E5 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D209621A03C9B00A7E3E5 /* CityCell.swift */; };
+		6B5D209921A03C9B00A7E3E5 /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B5D209721A03C9B00A7E3E5 /* CityCell.xib */; };
+		6B5D209D21A04C3D00A7E3E5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D209C21A04C3D00A7E3E5 /* CityViewController.swift */; };
+		6B5D20A021A17C3000A7E3E5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5D209F21A17C3000A7E3E5 /* UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2631C91594D00218246C3ACB /* Pods-RussianCities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RussianCities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RussianCities/Pods-RussianCities.debug.xcconfig"; sourceTree = "<group>"; };
+		32F43BC268257AFE8DDF772B /* Pods_RussianCities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RussianCities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5D2010219F587A00A7E3E5 /* RussianCities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RussianCities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5D2013219F587A00A7E3E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B5D2015219F587A00A7E3E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6B5D2018219F587A00A7E3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B5D201B219F587A00A7E3E5 /* RussianCities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RussianCities.xcdatamodel; sourceTree = "<group>"; };
 		6B5D201D219F587B00A7E3E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B5D2020219F587B00A7E3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B5D2022219F587B00A7E3E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5D202F21A015B700A7E3E5 /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		6B5D203121A015B700A7E3E5 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6B5D203221A015B700A7E3E5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6B5D203321A015B700A7E3E5 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6B5D203421A015B700A7E3E5 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		6B5D203521A015B700A7E3E5 /* TimeInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		6B5D203821A015B700A7E3E5 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		6B5D203921A015B700A7E3E5 /* UIView+LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LoadingView.swift"; sourceTree = "<group>"; };
+		6B5D204321A015D800A7E3E5 /* PersistenceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		6B5D204821A015D800A7E3E5 /* NetworkingEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingEnvironment.swift; sourceTree = "<group>"; };
+		6B5D204921A015D800A7E3E5 /* ProgressHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHandler.swift; sourceTree = "<group>"; };
+		6B5D204A21A015D800A7E3E5 /* ProgressDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDelegate.swift; sourceTree = "<group>"; };
+		6B5D204B21A015D800A7E3E5 /* NetworkingOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingOperation.swift; sourceTree = "<group>"; };
+		6B5D204C21A015D800A7E3E5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6B5D204D21A015D800A7E3E5 /* NetworkingDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingDispatcher.swift; sourceTree = "<group>"; };
+		6B5D204E21A015D800A7E3E5 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6B5D204F21A015D800A7E3E5 /* ConcreateNetworkingDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreateNetworkingDispatcher.swift; sourceTree = "<group>"; };
+		6B5D205221A015D800A7E3E5 /* GetCitiesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCitiesOperation.swift; sourceTree = "<group>"; };
+		6B5D205621A015D800A7E3E5 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		6B5D205821A015D800A7E3E5 /* DataCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCheck.swift; sourceTree = "<group>"; };
+		6B5D205A21A015D800A7E3E5 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6B5D206021A015D800A7E3E5 /* CityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityService.swift; sourceTree = "<group>"; };
+		6B5D206221A015D800A7E3E5 /* NotificationCenterNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterNames.swift; sourceTree = "<group>"; };
+		6B5D207B21A0170700A7E3E5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6B5D207C21A0170700A7E3E5 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		6B5D207D21A0170700A7E3E5 /* SecondVCDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCDelegate.swift; sourceTree = "<group>"; };
+		6B5D207E21A0170700A7E3E5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		6B5D208021A0170700A7E3E5 /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		6B5D208121A0170700A7E3E5 /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		6B5D208221A0170700A7E3E5 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		6B5D208321A0170700A7E3E5 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		6B5D208421A0170700A7E3E5 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		6B5D208521A0170700A7E3E5 /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		6B5D208621A0170700A7E3E5 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		6B5D208721A0170700A7E3E5 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		6B5D209121A02E0300A7E3E5 /* Cities.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cities.storyboard; sourceTree = "<group>"; };
+		6B5D209321A02E5400A7E3E5 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		6B5D209621A03C9B00A7E3E5 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		6B5D209721A03C9B00A7E3E5 /* CityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		6B5D209C21A04C3D00A7E3E5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		6B5D209F21A17C3000A7E3E5 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		A1EED1C58144A6F45C9D4334 /* Pods-RussianCities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RussianCities.release.xcconfig"; path = "Pods/Target Support Files/Pods-RussianCities/Pods-RussianCities.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +109,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A5C8DAECD7AC3D0A9A45C0 /* Pods_RussianCities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5857A6FAC7D32DD3DDC01D1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2631C91594D00218246C3ACB /* Pods-RussianCities.debug.xcconfig */,
+				A1EED1C58144A6F45C9D4334 /* Pods-RussianCities.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6B5D2007219F587A00A7E3E5 = {
 			isa = PBXGroup;
 			children = (
 				6B5D2012219F587A00A7E3E5 /* RussianCities */,
 				6B5D2011219F587A00A7E3E5 /* Products */,
+				5857A6FAC7D32DD3DDC01D1C /* Pods */,
+				892D34A618F0453E6E943EF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +146,262 @@
 		6B5D2012219F587A00A7E3E5 /* RussianCities */ = {
 			isa = PBXGroup;
 			children = (
-				6B5D2013219F587A00A7E3E5 /* AppDelegate.swift */,
-				6B5D2015219F587A00A7E3E5 /* ViewController.swift */,
-				6B5D2017219F587A00A7E3E5 /* Main.storyboard */,
-				6B5D201D219F587B00A7E3E5 /* Assets.xcassets */,
-				6B5D201F219F587B00A7E3E5 /* LaunchScreen.storyboard */,
-				6B5D2022219F587B00A7E3E5 /* Info.plist */,
-				6B5D201A219F587A00A7E3E5 /* RussianCities.xcdatamodeld */,
+				6B5D202821A013E300A7E3E5 /* MainFiles */,
+				6B5D202921A013F000A7E3E5 /* Common */,
+				6B5D202A21A013F800A7E3E5 /* Business Logic */,
+				6B5D202B21A0140400A7E3E5 /* Custom Classes */,
+				6B5D202C21A0140C00A7E3E5 /* ViewControllers */,
+				6B5D202D21A0141400A7E3E5 /* Resources */,
 			);
 			path = RussianCities;
+			sourceTree = "<group>";
+		};
+		6B5D202821A013E300A7E3E5 /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D2013219F587A00A7E3E5 /* AppDelegate.swift */,
+				6B5D201F219F587B00A7E3E5 /* LaunchScreen.storyboard */,
+				6B5D2022219F587B00A7E3E5 /* Info.plist */,
+			);
+			path = MainFiles;
+			sourceTree = "<group>";
+		};
+		6B5D202921A013F000A7E3E5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D202E21A015B700A7E3E5 /* Constants */,
+				6B5D203021A015B700A7E3E5 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6B5D202A21A013F800A7E3E5 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D204221A015D800A7E3E5 /* CoreData */,
+				6B5D205921A015D800A7E3E5 /* Model */,
+				6B5D204621A015D800A7E3E5 /* Networking */,
+				6B5D206221A015D800A7E3E5 /* NotificationCenterNames.swift */,
+				6B5D205F21A015D800A7E3E5 /* Services */,
+				6B5D205721A015D800A7E3E5 /* Validation */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		6B5D202B21A0140400A7E3E5 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D207F21A0170700A7E3E5 /* Checkbox */,
+				6B5D207A21A0170700A7E3E5 /* Other */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		6B5D202C21A0140C00A7E3E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209021A02DF200A7E3E5 /* Cities */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B5D202D21A0141400A7E3E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D201D219F587B00A7E3E5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B5D202E21A015B700A7E3E5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D202F21A015B700A7E3E5 /* ColorHelper.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6B5D203021A015B700A7E3E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209E21A17C1900A7E3E5 /* UITableView */,
+				6B5D203121A015B700A7E3E5 /* UIView.swift */,
+				6B5D203221A015B700A7E3E5 /* ViewController.swift */,
+				6B5D203321A015B700A7E3E5 /* String.swift */,
+				6B5D203421A015B700A7E3E5 /* UIImage.swift */,
+				6B5D203521A015B700A7E3E5 /* TimeInterval.swift */,
+				6B5D203621A015B700A7E3E5 /* UIView+LoadingView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B5D203621A015B700A7E3E5 /* UIView+LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D203721A015B700A7E3E5 /* LoadingView */,
+				6B5D203921A015B700A7E3E5 /* UIView+LoadingView.swift */,
+			);
+			path = "UIView+LoadingView";
+			sourceTree = "<group>";
+		};
+		6B5D203721A015B700A7E3E5 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D203821A015B700A7E3E5 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		6B5D204221A015D800A7E3E5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D201A219F587A00A7E3E5 /* RussianCities.xcdatamodeld */,
+				6B5D204321A015D800A7E3E5 /* PersistenceService.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6B5D204621A015D800A7E3E5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D204721A015D800A7E3E5 /* Core */,
+				6B5D204E21A015D800A7E3E5 /* APIService.swift */,
+				6B5D204F21A015D800A7E3E5 /* ConcreateNetworkingDispatcher.swift */,
+				6B5D205021A015D800A7E3E5 /* Operations */,
+				6B5D205521A015D800A7E3E5 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6B5D204721A015D800A7E3E5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D204821A015D800A7E3E5 /* NetworkingEnvironment.swift */,
+				6B5D204921A015D800A7E3E5 /* ProgressHandler.swift */,
+				6B5D204A21A015D800A7E3E5 /* ProgressDelegate.swift */,
+				6B5D204B21A015D800A7E3E5 /* NetworkingOperation.swift */,
+				6B5D204C21A015D800A7E3E5 /* Request.swift */,
+				6B5D204D21A015D800A7E3E5 /* NetworkingDispatcher.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6B5D205021A015D800A7E3E5 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D205221A015D800A7E3E5 /* GetCitiesOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		6B5D205521A015D800A7E3E5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D205621A015D800A7E3E5 /* Requests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6B5D205721A015D800A7E3E5 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D205821A015D800A7E3E5 /* DataCheck.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		6B5D205921A015D800A7E3E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D205A21A015D800A7E3E5 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B5D205F21A015D800A7E3E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D206021A015D800A7E3E5 /* CityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B5D207A21A0170700A7E3E5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D207B21A0170700A7E3E5 /* DataManager.swift */,
+				6B5D207C21A0170700A7E3E5 /* MulticastDelegate.swift */,
+				6B5D207D21A0170700A7E3E5 /* SecondVCDelegate.swift */,
+				6B5D207E21A0170700A7E3E5 /* Device.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6B5D207F21A0170700A7E3E5 /* Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D208021A0170700A7E3E5 /* BEMCheckBox.h */,
+				6B5D208121A0170700A7E3E5 /* BEMAnimationManager.m */,
+				6B5D208221A0170700A7E3E5 /* BEMPathManager.m */,
+				6B5D208321A0170700A7E3E5 /* BEMCheckBoxGroup.m */,
+				6B5D208421A0170700A7E3E5 /* BEMAnimationManager.h */,
+				6B5D208521A0170700A7E3E5 /* BEMCheckBox.m */,
+				6B5D208621A0170700A7E3E5 /* BEMPathManager.h */,
+				6B5D208721A0170700A7E3E5 /* BEMCheckBoxGroup.h */,
+			);
+			path = Checkbox;
+			sourceTree = "<group>";
+		};
+		6B5D209021A02DF200A7E3E5 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209121A02E0300A7E3E5 /* Cities.storyboard */,
+				6B5D209A21A04BE300A7E3E5 /* CitiesList */,
+				6B5D209B21A04BF400A7E3E5 /* CityInfo */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		6B5D209521A03C7300A7E3E5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209621A03C9B00A7E3E5 /* CityCell.swift */,
+				6B5D209721A03C9B00A7E3E5 /* CityCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6B5D209A21A04BE300A7E3E5 /* CitiesList */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209521A03C7300A7E3E5 /* Cell */,
+				6B5D209321A02E5400A7E3E5 /* CitiesViewController.swift */,
+			);
+			path = CitiesList;
+			sourceTree = "<group>";
+		};
+		6B5D209B21A04BF400A7E3E5 /* CityInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209C21A04C3D00A7E3E5 /* CityViewController.swift */,
+			);
+			path = CityInfo;
+			sourceTree = "<group>";
+		};
+		6B5D209E21A17C1900A7E3E5 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				6B5D209F21A17C3000A7E3E5 /* UITableView.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		892D34A618F0453E6E943EF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32F43BC268257AFE8DDF772B /* Pods_RussianCities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +411,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B5D2025219F587B00A7E3E5 /* Build configuration list for PBXNativeTarget "RussianCities" */;
 			buildPhases = (
+				9FE06F2D9232F79722A34AC8 /* [CP] Check Pods Manifest.lock */,
 				6B5D200C219F587A00A7E3E5 /* Sources */,
 				6B5D200D219F587A00A7E3E5 /* Frameworks */,
 				6B5D200E219F587A00A7E3E5 /* Resources */,
+				B6A5F7A128F106AE9B52F961 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +466,108 @@
 			files = (
 				6B5D2021219F587B00A7E3E5 /* LaunchScreen.storyboard in Resources */,
 				6B5D201E219F587B00A7E3E5 /* Assets.xcassets in Resources */,
-				6B5D2019219F587A00A7E3E5 /* Main.storyboard in Resources */,
+				6B5D209921A03C9B00A7E3E5 /* CityCell.xib in Resources */,
+				6B5D209221A02E0300A7E3E5 /* Cities.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FE06F2D9232F79722A34AC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RussianCities-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A5F7A128F106AE9B52F961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RussianCities/Pods-RussianCities-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RussianCities/Pods-RussianCities-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B5D200C219F587A00A7E3E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5D2016219F587A00A7E3E5 /* ViewController.swift in Sources */,
+				6B5D208821A0170700A7E3E5 /* DataManager.swift in Sources */,
+				6B5D207221A015D800A7E3E5 /* DataCheck.swift in Sources */,
+				6B5D208F21A0170700A7E3E5 /* BEMCheckBox.m in Sources */,
+				6B5D20A021A17C3000A7E3E5 /* UITableView.swift in Sources */,
+				6B5D203D21A015B700A7E3E5 /* String.swift in Sources */,
+				6B5D206B21A015D800A7E3E5 /* APIService.swift in Sources */,
+				6B5D203F21A015B700A7E3E5 /* TimeInterval.swift in Sources */,
+				6B5D203C21A015B700A7E3E5 /* ViewController.swift in Sources */,
+				6B5D206321A015D800A7E3E5 /* PersistenceService.swift in Sources */,
+				6B5D206A21A015D800A7E3E5 /* NetworkingDispatcher.swift in Sources */,
+				6B5D209421A02E5400A7E3E5 /* CitiesViewController.swift in Sources */,
+				6B5D203B21A015B700A7E3E5 /* UIView.swift in Sources */,
+				6B5D207121A015D800A7E3E5 /* Requests.swift in Sources */,
+				6B5D209821A03C9B00A7E3E5 /* CityCell.swift in Sources */,
+				6B5D208C21A0170700A7E3E5 /* BEMAnimationManager.m in Sources */,
 				6B5D2014219F587A00A7E3E5 /* AppDelegate.swift in Sources */,
+				6B5D203A21A015B700A7E3E5 /* ColorHelper.swift in Sources */,
+				6B5D206C21A015D800A7E3E5 /* ConcreateNetworkingDispatcher.swift in Sources */,
+				6B5D206921A015D800A7E3E5 /* Request.swift in Sources */,
+				6B5D204121A015B700A7E3E5 /* UIView+LoadingView.swift in Sources */,
 				6B5D201C219F587A00A7E3E5 /* RussianCities.xcdatamodeld in Sources */,
+				6B5D208921A0170700A7E3E5 /* MulticastDelegate.swift in Sources */,
+				6B5D203E21A015B700A7E3E5 /* UIImage.swift in Sources */,
+				6B5D206E21A015D800A7E3E5 /* GetCitiesOperation.swift in Sources */,
+				6B5D209D21A04C3D00A7E3E5 /* CityViewController.swift in Sources */,
+				6B5D206721A015D800A7E3E5 /* ProgressDelegate.swift in Sources */,
+				6B5D208E21A0170700A7E3E5 /* BEMCheckBoxGroup.m in Sources */,
+				6B5D206621A015D800A7E3E5 /* ProgressHandler.swift in Sources */,
+				6B5D208B21A0170700A7E3E5 /* Device.swift in Sources */,
+				6B5D206821A015D800A7E3E5 /* NetworkingOperation.swift in Sources */,
+				6B5D204021A015B700A7E3E5 /* LoadingView.swift in Sources */,
+				6B5D208D21A0170700A7E3E5 /* BEMPathManager.m in Sources */,
+				6B5D207921A015D800A7E3E5 /* NotificationCenterNames.swift in Sources */,
+				6B5D207321A015D800A7E3E5 /* City.swift in Sources */,
+				6B5D208A21A0170700A7E3E5 /* SecondVCDelegate.swift in Sources */,
+				6B5D206521A015D800A7E3E5 /* NetworkingEnvironment.swift in Sources */,
+				6B5D207721A015D800A7E3E5 /* CityService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6B5D2017219F587A00A7E3E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6B5D2018219F587A00A7E3E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6B5D201F219F587B00A7E3E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,11 +697,12 @@
 		};
 		6B5D2026219F587B00A7E3E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2631C91594D00218246C3ACB /* Pods-RussianCities.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXAGVF2MTG;
-				INFOPLIST_FILE = RussianCities/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RussianCities/MainFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +716,12 @@
 		};
 		6B5D2027219F587B00A7E3E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1EED1C58144A6F45C9D4334 /* Pods-RussianCities.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXAGVF2MTG;
-				INFOPLIST_FILE = RussianCities/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RussianCities/MainFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
